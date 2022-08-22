@@ -12,16 +12,17 @@ terraform {
   required_version = ">= 1.1.0"
 
   cloud {
-    organization = "REPLACE_ME"
+    organization = "raul-personal-org"
 
     workspaces {
-      name = "gh-actions-demo"
+      name = "github-actions"
     }
   }
 }
 
 provider "aws" {
   region = "us-west-2"
+  profile = "raul-2"
 }
 
 resource "random_pet" "sg" {}
