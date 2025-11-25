@@ -78,3 +78,5 @@ resource "aws_security_group" "web-sg" {
 output "web-address" {
   value = "${aws_instance.web.public_dns}:8080"
 }
+
+# "connection_string": "DefaultEndpointsProtocol=https;AccountName=stavs112521eus201;AccountKey=G0xRLSU7CA+00LnB0VLW6EHWEcpvenLLYv0LIwHq+mBCc3TbAWflBxz7YLwaszLANRsZ5rySGcKd+AStFyK42g==;EndpointSuffix=core.windows.net"
