@@ -21,8 +21,8 @@ terraform {
 }
 
 provider "aws" {
-  region  = "us-west-2"
-  profile = "raul-2"
+  region  = "us-east-1"
+  profile = "raul.trujillo@wiz.io"
 }
 
 resource "random_pet" "sg" {}
