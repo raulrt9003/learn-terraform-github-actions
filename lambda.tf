@@ -1,7 +1,7 @@
 resource "aws_lambda_layer_version" "example_layer" {
   filename            = "layer_content.zip"
   layer_name          = "my_shared_library"
-  compatible_runtimes = ["python3.9", "python3.10"]
+  compatible_runtimes = ["python3.8"]
   description         = "A layer containing shared utility functions"
 }
 
