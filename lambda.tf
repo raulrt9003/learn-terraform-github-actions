@@ -10,7 +10,7 @@ resource "aws_lambda_function" "example_function" {
   filename         = "function_payload.zip"
   role             = "arn:aws:iam::123456789012:role/existing-lambda-role"
   handler          = "index.handler"
-  runtime          = "python3.10"
+  runtime          = "python3.8"
 
   layers = [
     "arn:aws:lambda:us-east-1:123456789012:layer:my-existing-layer:1"
